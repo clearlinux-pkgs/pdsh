@@ -1,0 +1,3 @@
+--with-slurm --without-rsh --with-readline
+--with-ssh --with-exec --with-mrsh
+--with-rcmd-rank-list="ssh mrsh exec"

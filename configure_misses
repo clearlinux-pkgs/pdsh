@@ -1,0 +1,17 @@
+Configure miss: whether debugging is enabled
+Configure miss: sys/sysmacros.h, usability
+Configure miss: sys/sysmacros.h, presence
+Configure miss: sys/sysmacros.h,
+Configure miss: msg_accrights in struct msghdr
+Configure miss: whether strerror_r returns char *
+Configure miss: sigthreadmask
+Configure miss: whether to build rsh module
+Configure miss: whether to build xcpu module
+Configure miss: krb_sendauth in -lkrb
+Configure miss: path to machines file
+Configure miss: whether to build genders module
+Configure miss: whether to build nodeupdown module
+Configure miss: whether to build torque module
+Configure miss: whether to build dshgroup module
+Configure miss: whether to build netgroup module
+Configure miss: if malloc debugging is wanted
