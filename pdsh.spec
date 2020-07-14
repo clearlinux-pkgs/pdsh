@@ -4,7 +4,7 @@
 #
 Name     : pdsh
 Version  : 2.34
-Release  : 8
+Release  : 9
 URL      : https://github.com/chaos/pdsh/releases/download/pdsh-2.34/pdsh-2.34.tar.gz
 Source0  : https://github.com/chaos/pdsh/releases/download/pdsh-2.34/pdsh-2.34.tar.gz
 Summary  : Parallel remote shell program
@@ -67,14 +67,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1579105635
+export SOURCE_DATE_EPOCH=1594767320
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static --with-slurm --without-rsh --with-readline \
 --with-ssh --with-exec --with-mrsh \
@@ -89,7 +89,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1579105635
+export SOURCE_DATE_EPOCH=1594767320
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pdsh
 cp %{_builddir}/pdsh-2.34/COPYING %{buildroot}/usr/share/package-licenses/pdsh/4cc77b90af91e615a64ae04893fdffa7939db84c
