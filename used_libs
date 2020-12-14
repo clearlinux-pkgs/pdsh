@@ -3,5 +3,5 @@ libdl.so.2
 libmunge.so.2
 libpthread.so.0
 libreadline.so.8
-libslurm.so.35
+libslurm.so.36
 libtinfo.so.6
